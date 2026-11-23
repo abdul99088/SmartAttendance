@@ -1,0 +1,70 @@
+{
+  "aihm_version": "0.1.dev1+gbb8501698",
+  "model_id": "mobile_facenet",
+  "model_name": "MobileFaceNet",
+  "runtime": "RUNTIME_TFLITE",
+  "precision": "PRECISION_FLOAT",
+  "tool_versions": {
+    "qairt": "2.51.0.260929181845",
+    "litert": "1.4.2"
+  },
+  "model_files": [
+    {
+      "filename": "mobile_facenet.tflite",
+      "inputs": [
+        {
+          "name": "img1",
+          "shape": [
+            1,
+            3,
+            112,
+            112
+          ],
+          "dtype": "DTYPE_FLOAT32",
+          "value_range": {
+            "double_r": {
+              "min": 0.0,
+              "max": 1.0
+            }
+          },
+          "io_type": "IO_TYPE_IMAGE",
+          "image_metadata": {
+            "color_format": "COLOR_FORMAT_RGB"
+          }
+        },
+        {
+          "name": "img2",
+          "shape": [
+            1,
+            3,
+            112,
+            112
+          ],
+          "dtype": "DTYPE_FLOAT32",
+          "value_range": {
+            "double_r": {
+              "min": 0.0,
+              "max": 1.0
+            }
+          },
+          "io_type": "IO_TYPE_IMAGE",
+          "image_metadata": {
+            "color_format": "COLOR_FORMAT_RGB"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "embeddings",
+          "shape": [
+            2,
+            128
+          ],
+          "dtype": "DTYPE_FLOAT32",
+          "io_type": "IO_TYPE_TENSOR"
+        }
+      ]
+    }
+  ],
+  "use_case": "MODEL_USE_CASE_OBJECT_DETECTION"
+}
