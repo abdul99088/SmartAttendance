@@ -168,4 +168,20 @@ The following functionality has been tested:
 
 - Improve recognition accuracy using a larger and more diverse face dataset.
 - Calibrate the similarity threshold using real-world validation.
-- Add
+- Add teacher authentication and role-based access.
+- Add cloud synchronization and institutional backups.
+- Improve liveness detection to reduce photo-based spoofing.
+- Add support for multiple classes and institutions.
+
+## Developer
+
+**Abdul Vassay Khaliq**
+
+Computer Engineering Student  
+National University of Sciences and Technology (NUST)
+
+GitHub: https://github.com/abdul99088
+
+---
+
+**SmartAttendance – Making attendance smarter with Artificial Intelligence.**
